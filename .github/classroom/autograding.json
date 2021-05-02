@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "name": "Build",
+      "setup": "",
+      "run": "make all",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Mount test",
+      "setup": "",
+      "run": "python3 tests/test_mount.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Dir test on mount dir",
+      "setup": "",
+      "run": "python3 tests/test_mnt_is_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Empty test on mount dir",
+      "setup": "",
+      "run": "python3 tests/test_empty_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Flat directories",
+      "setup": "",
+      "run": "python3 tests/test_flat_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Flat files",
+      "setup": "",
+      "run": "python3 tests/test_flat_file.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Hierarchical directories",
+      "setup": "",
+      "run": "python3 tests/test_hier_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Hierarchical files",
+      "setup": "",
+      "run": "python3 tests/test_hier_file.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Name check when file created before dir",
+      "setup": "",
+      "run": "python3 tests/test_name_check_file_first_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Name check when dir created before file",
+      "setup": "",
+      "run": "python3 tests/test_name_check_dir_first_file.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Name check when file and file have same name",
+      "setup": "",
+      "run": "python3 tests/test_name_check_same_file_file.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Write read test on flat file",
+      "setup": "",
+      "run": "python3 tests/test_flat_file_io_write.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Write Append read test on flat file",
+      "setup": "",
+      "run": "python3 tests/test_flat_file_io_append.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Name check when dir and file have same name",
+      "setup": "",
+      "run": "python3 tests/test_name_check_same_file_dir.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
