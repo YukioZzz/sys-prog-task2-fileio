@@ -49,7 +49,7 @@ def main() -> None:
                 fuse_unmount(mnt_path)
                 sys.exit(1)
 
-            if os.listdir(mnt_path) != ["foo", "bar"]:
+            if sorted(os.listdir(mnt_path)) != sorted(["foo", "bar"]):
                 fuse_unmount(mnt_path)
                 sys.exit(1)
                         
