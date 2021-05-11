@@ -3,22 +3,22 @@
 CC ?= cc
 CFLAGS ?= -g -Wall -O2
 CXX ?= c++
-CXXFLAGS ?= -g -Wall -O2
+CXXFLAGS ?= -g -Wall -O2 -std=c++11
 CARGO ?= cargo
 RUSTFLAGS ?= -g
 
 # this target should build all executables for all tests
-all:
-	@echo "Please set a concrete build command here"
-	false
+#all:
+#	@echo "Please set a concrete build command here"
+#	false
 
 # C example:
 #all:
 #	$(CC) $(CFLAGS) -o memfs memfs.c `pkg-config fuse --cflags --libs`
 
 # C++ example:
-#all:
-#	$(CXX) $(CXXFLAGS) -o memfs memfs.cpp `pkg-config fuse --cflags --libs`
+all:
+	$(CXX) $(CXXFLAGS) -o memfs memfs.cpp `pkg-config fuse --cflags --libs`
 
 # Rust example:
 #all:
